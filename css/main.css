@@ -1,3 +1,13 @@
+h2 {
+  font-family: 'Bangers';
+  font-size: 30px;
+  color: #E3001B; }
+
+p {
+  font-family: 'Bangers';
+  font-size: 20px;
+  color: #E3001B; }
+
 body {
   background-color: black; }
 
@@ -37,16 +47,55 @@ body {
   top: 10px;
   left: 55px; }
   .logoRectangle h2 {
-    font-family: 'Bangers';
     position: absolute;
     bottom: -20px;
-    right: -55px;
-    color: #E32429; }
+    right: -55px; }
   .logoRectangle p {
-    font-family: 'Bangers';
     font-style: italic;
     font-size: 20px;
-    color: #E32429;
     position: absolute;
     bottom: -20px;
-    right: -150px; }
+    right: -205px; }
+
+.Main {
+  margin-top: 65px;
+  margin-left: 150px; }
+
+.Comics, .Characters, .Contact {
+  height: 350px;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 20px; }
+
+.upperContent {
+  height: 300px; }
+
+.lowerContent {
+  text-align: center;
+  background-color: #91caff;
+  border-radius: 5px; }
+  .lowerContent h2 {
+    color: white; }
+
+.comicIMGone, .comicIMGtwo, .comicIMGthree {
+  border-right: 3px dotted #E3001B;
+  height: 100%;
+  top: 2px; }
+
+.comicIMGthree {
+  border-right: none; }
+
+.charaIMGone, .charaIMGtwo, .charaIMGthree {
+  border-right: 3px dotted #E3001B;
+  height: 100%;
+  top: 2px; }
+
+.charaIMGthree {
+  border-right: none; }
+
+.contactIMG img {
+  color: #E3001B;
+  height: 200px;
+  margin-left: 36px;
+  margin-top: 40px;
+  width: 200px; }

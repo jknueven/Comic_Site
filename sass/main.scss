@@ -52,20 +52,71 @@ body {
   left:55px;
   
   h2 {
-  font-family: 'Bangers';
   position:absolute;
   bottom:-20px;
   right:-55px;
-  color:#E32429;
   }
 
   p {
-  font-family: 'Bangers';
   font-style: italic;
   font-size: 20px;
-  color:#E32429;
   position:absolute;
   bottom:-20px;
-  right:-150px;
+  right:-205px;
   }
+}
+
+.Main {
+	margin-top:65px;
+	margin-left:150px;
+}
+
+.Comics, .Characters, .Contact {
+	height:350px;
+	background-color:white;
+	border-radius:5px;
+	margin-left:20px;
+}
+
+.upperContent {
+	height:300px;
+
+}
+
+.lowerContent {
+	text-align:center;
+	background-color:lighten($tertiaryColor,20);
+	border-radius:5px;
+
+	h2 {
+		color:white;
+	}
+}
+
+.comicIMGone, .comicIMGtwo, .comicIMGthree {
+	border-right:3px dotted $primaryColor;
+	height:100%;
+	top:2px;
+}
+
+.comicIMGthree {
+	border-right:none;
+}
+
+.charaIMGone, .charaIMGtwo, .charaIMGthree {
+	border-right:3px dotted $primaryColor;
+	height:100%;
+	top:2px;
+}
+
+.charaIMGthree {
+	border-right:none;
+}
+
+.contactIMG img {
+	color:$primaryColor;
+	height: 200px;
+    margin-left: 36px;
+    margin-top: 40px;
+    width: 200px;
 }
