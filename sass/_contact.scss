@@ -1,0 +1,19 @@
+#map {
+        width: 500px;
+        height: 400px;
+      }
+
+.contactForm {
+	background-color:lighten($tertiaryColor,20);
+	height:360px;
+	border-radius:10px;
+
+	h2 {
+		margin-left: 10px;
+	}
+
+	p {
+		color:$secondaryColor;
+		margin-left: 20px;
+	}
+}

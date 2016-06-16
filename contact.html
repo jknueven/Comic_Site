@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MARVELous FanSite</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="CSS/main.css">
+<script src="https://use.fontawesome.com/ae699f5e09.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container Top">
+	<div class="bannerTop">
+		<img src="images/marvelcomics-portal-banner.jpg">
+	</div>
+	<div class="row topRow">
+		<div class="logo">
+ 			 <div class="logoCircle">
+ 			 	<img src="http://www.renders-graphiques.fr/image/upload/normal/r47.png">
+ 			 </div>
+
+ 			 <div class="logoRectangle"><h2>The MARVELous FanSite:</h2><p>A Collection of Fans</p></div>
+  
+		</div>
+	</div>
+
+</div>
+
+<div class="container Main">
+	<div class="row 1">
+
+		<div class="col-lg-5 contactForm"> 
+			<div class="row address">
+				<h2>Address:</h2><p>Times Square, Manhattan, NY 10036</p> 
+			</div>
+
+			<div class="row email">
+				<h2>Email:</h2><p>marvelFan1939@timelycomics.com</p>
+			</div>
+
+			<div class="row phone"> 
+				<h2>Phone#:</h2><p>(212)-555-1337</p>
+			</div>
+			<p>(Admin = S. Lee, marvel comics inc.)</p>
+		</div>
+		
+		<div class="col-lg-3 goggleMap">
+			<div id="map">
+				
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<script>
+  function initMap() {
+    var mapDiv = document.getElementById('map');
+    var map = new google.maps.Map(mapDiv, {
+      center: {lat: 40.597, lng: -74.023},
+      zoom: 8
+    });
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

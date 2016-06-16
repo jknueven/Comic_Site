@@ -8,6 +8,20 @@ p {
   font-size: 20px;
   color: #E3001B; }
 
+#map {
+  width: 500px;
+  height: 400px; }
+
+.contactForm {
+  background-color: #91caff;
+  height: 360px;
+  border-radius: 10px; }
+  .contactForm h2 {
+    margin-left: 10px; }
+  .contactForm p {
+    color: #FCF06A;
+    margin-left: 20px; }
+
 body {
   background-color: black; }
 
