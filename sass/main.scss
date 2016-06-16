@@ -1,0 +1,71 @@
+$primaryColor: #E3001B;
+
+$secondaryColor: #FCF06A;
+
+$tertiaryColor: #2B99FF;
+
+@import "text";
+
+body {
+	background-color:black;
+}
+
+.container.Top {
+	width:100%;
+	height:130px;
+	border-bottom:2px dotted $tertiaryColor;
+}
+
+.bannerTop img {
+	width:100%;
+	height: 128px;
+	opacity:0.8;
+}
+
+.logoCircle {
+  width:150px;
+  height:150px;
+  position:absolute;
+  top:10px;
+  left:40px;
+  background-color:$tertiaryColor;
+  border-radius:50%;
+  border:10px dashed white;
+  z-index:40;
+  
+  img {
+    width:250px;
+    height:150px;
+    position:absolute;
+    top:-10px;
+    left:-50px;
+    transform:rotate(-15deg);
+    z-index:6;
+  }
+}
+
+.logoRectangle {
+  width:300px;
+  height:150px;
+  position:absolute;
+  top:10px;
+  left:55px;
+  
+  h2 {
+  font-family: 'Bangers';
+  position:absolute;
+  bottom:-20px;
+  right:-55px;
+  color:#E32429;
+  }
+
+  p {
+  font-family: 'Bangers';
+  font-style: italic;
+  font-size: 20px;
+  color:#E32429;
+  position:absolute;
+  bottom:-20px;
+  right:-150px;
+  }
+}
