@@ -68,19 +68,40 @@ body {
   }
 }
 
-.quote {
+.sideMenu {
 	height:200px;
-	width:260px;
-	background-color:white;
-	left:-10px;
+	width:230px;
+	background-color:$secondaryColor;
 	border-radius:5px;
 
+	ul{
+		padding-left: 0;
+	}
+
+	li {
+	font-size:25px;
+	font-family: 'Bangers';
+	display:block;
+	}
+	
+}
+
+.quote {
+	height:200px;
+	width:230px;
+	background-color:white;
+	border-radius:5px;
+	margin-left:-15px;
+
 	.upperQuote {
-		background-color:lighten($secondaryColor,10);
+		background-color:lighten($tertiaryColor,10);
+		margin-left: 0px;
+		width: 230px;
 
 		h2 {
 			font-size: 20px;
-			margin-left: 10px;
+			margin-left: 15px;
+			margin-top: 12px;
 		}
 	}
 

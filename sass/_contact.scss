@@ -1,20 +1,28 @@
 #map {
         width: 500px;
         height: 400px;
-      }
+}
+
+.sideMenu {
+	li {
+		padding-top: 10px;
+	}
+}
+
 
 .contactForm {
-	background-color:lighten($primaryColor,10);
+	background-color:white;
 	height:360px;
-	border-radius:10px;
+	border-radius:5px;
+	margin-left:15px;
 
 	h2 {
 		margin-left: 10px;
-		color:white;
+		color:$primaryColor;
 	}
 
 	p {
-		color:$secondaryColor;
+		color:$tertiaryColor;
 		margin-left: 20px;
 	}
 }

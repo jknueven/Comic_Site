@@ -12,15 +12,19 @@ p {
   width: 500px;
   height: 400px; }
 
+.sideMenu li {
+  padding-top: 10px; }
+
 .contactForm {
-  background-color: #ff1733;
+  background-color: white;
   height: 360px;
-  border-radius: 10px; }
+  border-radius: 5px;
+  margin-left: 15px; }
   .contactForm h2 {
     margin-left: 10px;
-    color: white; }
+    color: #E3001B; }
   .contactForm p {
-    color: #FCF06A;
+    color: #2B99FF;
     margin-left: 20px; }
 
 body {
@@ -72,17 +76,32 @@ body {
     bottom: -20px;
     right: -205px; }
 
+.sideMenu {
+  height: 200px;
+  width: 230px;
+  background-color: #FCF06A;
+  border-radius: 5px; }
+  .sideMenu ul {
+    padding-left: 0; }
+  .sideMenu li {
+    font-size: 25px;
+    font-family: 'Bangers';
+    display: block; }
+
 .quote {
   height: 200px;
-  width: 260px;
+  width: 230px;
   background-color: white;
-  left: -10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-left: -15px; }
   .quote .upperQuote {
-    background-color: #fdf59c; }
+    background-color: #5eb2ff;
+    margin-left: 0px;
+    width: 230px; }
     .quote .upperQuote h2 {
       font-size: 20px;
-      margin-left: 10px; }
+      margin-left: 15px;
+      margin-top: 12px; }
   .quote .lowerQuote {
     margin-top: 20px;
     margin-left: 5px; }
