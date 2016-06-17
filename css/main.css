@@ -13,11 +13,12 @@ p {
   height: 400px; }
 
 .contactForm {
-  background-color: #91caff;
+  background-color: #ff1733;
   height: 360px;
   border-radius: 10px; }
   .contactForm h2 {
-    margin-left: 10px; }
+    margin-left: 10px;
+    color: white; }
   .contactForm p {
     color: #FCF06A;
     margin-left: 20px; }
@@ -43,7 +44,7 @@ body {
   left: 40px;
   background-color: #2B99FF;
   border-radius: 50%;
-  border: 10px dashed white;
+  border: 10px dashed #FCF06A;
   z-index: 40; }
   .logoCircle img {
     width: 250px;
@@ -71,15 +72,33 @@ body {
     bottom: -20px;
     right: -205px; }
 
+.quote {
+  height: 200px;
+  width: 260px;
+  background-color: white;
+  left: -10px;
+  border-radius: 5px; }
+  .quote .upperQuote {
+    background-color: #fdf59c; }
+    .quote .upperQuote h2 {
+      font-size: 20px;
+      margin-left: 10px; }
+  .quote .lowerQuote {
+    margin-top: 20px;
+    margin-left: 5px; }
+    .quote .lowerQuote p {
+      font-size: 9px;
+      color: #2B99FF; }
+
 .Main {
   margin-top: 65px;
-  margin-left: 150px; }
+  margin-left: 20px; }
 
 .Comics, .Characters, .Contact {
   height: 350px;
   background-color: white;
   border-radius: 5px;
-  margin-left: 20px; }
+  margin-left: 10px; }
 
 .upperContent {
   height: 300px; }
@@ -87,29 +106,25 @@ body {
 .lowerContent {
   text-align: center;
   background-color: #91caff;
-  border-radius: 5px; }
+  border-radius: 0px 0px 5px 5px; }
   .lowerContent h2 {
     color: white; }
 
-.comicIMGone, .comicIMGtwo, .comicIMGthree {
-  border-right: 3px dotted #E3001B;
-  height: 100%;
-  top: 2px; }
+.comicIMGone img {
+  border-radius: 5px 5px 0px 0px;
+  height: 300px;
+  margin-left: -15px;
+  width: 293px; }
 
-.comicIMGthree {
-  border-right: none; }
-
-.charaIMGone, .charaIMGtwo, .charaIMGthree {
-  border-right: 3px dotted #E3001B;
-  height: 100%;
-  top: 2px; }
-
-.charaIMGthree {
-  border-right: none; }
+.charaIMGone img {
+  border-radius: 5px 5px 0px 0px;
+  height: 300px;
+  margin-left: -15px;
+  width: 293px; }
 
 .contactIMG img {
   color: #E3001B;
-  height: 200px;
-  margin-left: 36px;
-  margin-top: 40px;
-  width: 200px; }
+  height: 150px;
+  margin-left: 23%;
+  margin-top: 25%;
+  width: 150px; }

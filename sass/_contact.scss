@@ -4,12 +4,13 @@
       }
 
 .contactForm {
-	background-color:lighten($tertiaryColor,20);
+	background-color:lighten($primaryColor,10);
 	height:360px;
 	border-radius:10px;
 
 	h2 {
 		margin-left: 10px;
+		color:white;
 	}
 
 	p {

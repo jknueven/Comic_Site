@@ -32,7 +32,7 @@ body {
   left:40px;
   background-color:$tertiaryColor;
   border-radius:50%;
-  border:10px dashed white;
+  border:10px dashed $secondaryColor;
   z-index:40;
   
   img {
@@ -68,16 +68,43 @@ body {
   }
 }
 
+.quote {
+	height:200px;
+	width:260px;
+	background-color:white;
+	left:-10px;
+	border-radius:5px;
+
+	.upperQuote {
+		background-color:lighten($secondaryColor,10);
+
+		h2 {
+			font-size: 20px;
+			margin-left: 10px;
+		}
+	}
+
+	.lowerQuote {
+		margin-top: 20px;
+		margin-left: 5px;
+
+		p   {
+		font-size: 9px;
+		color:$tertiaryColor;
+		}
+	}
+}
+
 .Main {
 	margin-top:65px;
-	margin-left:150px;
+	margin-left:20px;
 }
 
 .Comics, .Characters, .Contact {
 	height:350px;
 	background-color:white;
 	border-radius:5px;
-	margin-left:20px;
+	margin-left:10px;
 }
 
 .upperContent {
@@ -88,37 +115,37 @@ body {
 .lowerContent {
 	text-align:center;
 	background-color:lighten($tertiaryColor,20);
-	border-radius:5px;
+	border-radius:0px 0px 5px 5px;
 
 	h2 {
 		color:white;
 	}
 }
 
-.comicIMGone, .comicIMGtwo, .comicIMGthree {
-	border-right:3px dotted $primaryColor;
-	height:100%;
-	top:2px;
+.comicIMGone {
+
+	img {
+	border-radius:5px 5px 0px 0px;
+	height: 300px;
+    margin-left: -15px;
+    width: 293px;
+	}
 }
 
-.comicIMGthree {
-	border-right:none;
-}
+.charaIMGone {
 
-.charaIMGone, .charaIMGtwo, .charaIMGthree {
-	border-right:3px dotted $primaryColor;
-	height:100%;
-	top:2px;
-}
-
-.charaIMGthree {
-	border-right:none;
+	img {
+	border-radius:5px 5px 0px 0px;
+	height: 300px;
+    margin-left: -15px;
+    width: 293px;
+	}
 }
 
 .contactIMG img {
 	color:$primaryColor;
-	height: 200px;
-    margin-left: 36px;
-    margin-top: 40px;
-    width: 200px;
+	height: 150px;
+    margin-left: 23%;
+    margin-top: 25%;
+    width: 150px;
 }
