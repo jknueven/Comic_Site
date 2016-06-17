@@ -8,6 +8,8 @@ $tertiaryColor: #2B99FF;
 
 @import "contact";
 
+@import "chara";
+
 body {
 	background-color:black;
 }
@@ -82,6 +84,11 @@ body {
 	font-size:25px;
 	font-family: 'Bangers';
 	display:block;
+
+	:hover{
+		background-color:$primaryColor;
+		text-decoration: none;
+		}
 	}
 	
 }

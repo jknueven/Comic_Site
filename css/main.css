@@ -27,6 +27,30 @@ p {
     color: #2B99FF;
     margin-left: 20px; }
 
+.charaContent div {
+  height: 300px;
+  margin-top: 15px; }
+  .charaContent div img {
+    max-height: 200px;
+    width: 100%; }
+  .charaContent div .dropdown {
+    height: auto;
+    padding: 20px;
+    margin-top: -7px; }
+
+.contentAPI {
+  height: 200px;
+  border-radius: 5px;
+  margin-left: 10px; }
+
+.dropdown {
+  display: none;
+  text-align: center;
+  background-color: #2B99FF;
+  border-radius: 0px 0px 5px 5px; }
+  .dropdown h2 {
+    color: white; }
+
 body {
   background-color: black; }
 
@@ -87,6 +111,9 @@ body {
     font-size: 25px;
     font-family: 'Bangers';
     display: block; }
+    .sideMenu li :hover {
+      background-color: #E3001B;
+      text-decoration: none; }
 
 .quote {
   height: 200px;
