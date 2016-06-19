@@ -7,6 +7,16 @@ $("body").on("click", '.clicker',function(e){
 
 $.ajax({url: "http://gateway.marvel.com:80/v1/public/characters?apikey=a3d450fd87cce2aeff11efbcc111f789", success: function(result){
 
+	function setDataDropdown(){
+		var info = result.data.results;
+
+		info.forEach(function(character){
+			var description = series.description;
+			var series = series.name;
+			$('.dropdown').append("<div class='row series'>'"+series+"'</div><div class='row description'>'"+description+"'</div>");
+		})
+	}
+
 	function setImgTable(){
 		var characters = result.data.results;
 
@@ -18,7 +28,7 @@ $.ajax({url: "http://gateway.marvel.com:80/v1/public/characters?apikey=a3d450fd8
 	}
 
 	setImgTable();
-	setInterval(setImage, 5000 );
+	setDataDropdown();
 
 
 }});
