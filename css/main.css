@@ -50,9 +50,21 @@ p {
   display: none;
   text-align: center;
   background-color: #2B99FF;
-  border-radius: 0px 0px 5px 5px; }
+  border-radius: 0px 0px 5px 5px;
+  z-index: 99; }
+  .dropdown .description {
+    height: auto;
+    padding-bottom: 10px; }
   .dropdown h2 {
     color: white; }
+  .dropdown h3 {
+    color: #E3001B;
+    font-family: "Bangers";
+    font-size: 40px;
+    margin-top: none; }
+  .dropdown p {
+    color: white;
+    font-size: 20px; }
 
 body {
   background-color: black; }

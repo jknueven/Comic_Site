@@ -9,7 +9,7 @@ $.ajax({url: "http://gateway.marvel.com:80/v1/public/comics?apikey=a3d450fd87cce
     console.log(results);
 	function setDataDropdown(){
 
-        var series = comic.series.items;
+        var series = comic.prices;
         var bigString = "";
 
         series.forEach(function(story){
@@ -29,8 +29,7 @@ $.ajax({url: "http://gateway.marvel.com:80/v1/public/comics?apikey=a3d450fd87cce
         comics.forEach(function(comic){
             var dropdown = setDataDropdown(comic);
             var comicThumbnail = comic.images[0].path+"."+comic.images[0].extension;
-            var descrip = comic.description;
-            $(".comicContent").append("<div class='col-md-4 clicker'><img src='"+comicThumbnail+"'><div class='dropdown'><div class='row description'>'"+descrip+"'</div>"+dropdown+"</div></div>");
+            $(".comicContent").append("<div class='col-md-4 clicker'><img src='"+comicThumbnail+"'><div class='dropdown'><div class='row description'>'"+comic.description+"'</div>"+dropdown+"</div></div>");
         })
         
     }

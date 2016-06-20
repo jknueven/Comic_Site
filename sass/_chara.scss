@@ -32,8 +32,24 @@
 	text-align:center;
 	background-color:$tertiaryColor;
 	border-radius:0px 0px 5px 5px;
+	z-index: 99;
+
+	.description {
+		height:auto;
+		padding-bottom:10px;
+	}
 
 	h2 {
 		color:white;
+	}
+	h3{
+		color:$primaryColor;
+		font-family: "Bangers";
+		font-size: 40px;
+		margin-top:none;
+	}
+	p{
+		color:white;
+		font-size:20px;
 	}
 }
