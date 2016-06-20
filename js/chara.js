@@ -7,29 +7,34 @@ $("body").on("click", '.clicker',function(e){
 
 $.ajax({url: "http://gateway.marvel.com:80/v1/public/characters?apikey=a3d450fd87cce2aeff11efbcc111f789", success: function(result){
 
-	function setDataDropdown(){
-		var info = result.data.results;
+	function setDataDropdown(character){
 
-		info.forEach(function(character){
-			var description = series.description;
-			var series = series.name;
-			$('.dropdown').append("<div class='row series'>'"+series+"'</div><div class='row description'>'"+description+"'</div>");
-		})
-	}
+        var series = character.series.items;
+        var bigString = "";
 
-	function setImgTable(){
-		var characters = result.data.results;
+        series.forEach(function(story){
+            series.forEach(function(story){
+                var name = story.name;
+                bigString += "<div class='row series'><ul>'"+name+"'</ul></div>";
+            })
+            
+        })
 
-		characters.forEach(function(character){
-			var charaThumbnail = character.thumbnail.path+"."+character.thumbnail.extension;
-		$(".charaContent").append("<div class='col-md-4 clicker'><img src='"+charaThumbnail+"'><div class='dropdown'></div></div</div>");
-		})
-		
-	}
+        return bigString;
+    }
 
-	setImgTable();
-	setDataDropdown();
+    function setImgTable(){
+        var characters = result.data.results;
 
+        characters.forEach(function(character){
+            var dropdown = setDataDropdown(character);
+            var charaThumbnail = character.thumbnail.path+"."+character.thumbnail.extension;
+            $(".charaContent").append("<div class='col-md-4 clicker'><img src='"+charaThumbnail+"'><div class='dropdown'><div class='row description'>'"+characters.description+"'</div>"+dropdown+"</div></div>");
+        })
+        
+    }
+
+    setImgTable();
 
 }});
 

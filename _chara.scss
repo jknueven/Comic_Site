@@ -2,7 +2,7 @@
 
 	div {
 		height:300px;
-		margin-top:15px;
+
 		img{
 			max-height: 200px;
 			width:100%;
@@ -13,6 +13,11 @@
 			margin-top: -7px;
 		}
 	}
+}
+
+.description, .series {
+	margin-top:10px;
+	font-size: 10px;
 }
 
 .contentAPI {

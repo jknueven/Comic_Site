@@ -28,8 +28,7 @@ p {
     margin-left: 20px; }
 
 .charaContent div {
-  height: 300px;
-  margin-top: 15px; }
+  height: 300px; }
   .charaContent div img {
     max-height: 200px;
     width: 100%; }
@@ -37,6 +36,10 @@ p {
     height: auto;
     padding: 20px;
     margin-top: -7px; }
+
+.description, .series {
+  margin-top: 10px;
+  font-size: 10px; }
 
 .contentAPI {
   height: 200px;
