@@ -20,9 +20,9 @@ $.ajax({url: "http://gateway.marvel.com:80/v1/public/characters?apikey=a3d450fd8
                 bigString += "<p>'"+name+"'</p>";
                 counter++;
                 }
-            })
+            });
             
-        })
+        });
 
         return bigString;
     }
@@ -33,7 +33,7 @@ $.ajax({url: "http://gateway.marvel.com:80/v1/public/characters?apikey=a3d450fd8
             var dropdown = setDataDropdown(character);
             var charaThumbnail = character.thumbnail.path+"."+character.thumbnail.extension;
             $(".charaContent").append("<div class='col-md-4 clicker'><img src='"+charaThumbnail+"'><div class='dropdown'><h3>"+character.name+"</h3><div class='description'>'"+character.description+"'</div>"+dropdown+"</div></div>");
-        })
+        });
         
     }
 

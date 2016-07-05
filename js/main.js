@@ -30,7 +30,6 @@ $.ajax({url: "http://gateway.marvel.com:80/v1/public/characters?apikey=a3d450fd8
 
 $.ajax({url: "http://gateway.marvel.com:80/v1/public/comics?apikey=a3d450fd87cce2aeff11efbcc111f789", success: function(result)
 	{
-		console.log(result)
 
 		function randomGenerator(e) {
 			return Math.floor(Math.random() * e) + 1;
