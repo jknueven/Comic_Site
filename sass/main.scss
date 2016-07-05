@@ -88,7 +88,7 @@ body {
 	display:block;
 
 	:hover{
-		background-color:$primaryColor;
+		color:$primaryColor;
 		text-decoration: none;
 		}
 	}
@@ -149,6 +149,14 @@ body {
 
 	h2 {
 		color:white;
+	}
+
+}
+
+.charaLink, .comicLink, .contactLink {
+	a:hover h2{
+		color:$primaryColor;
+		text-decoration: none;
 	}
 }
 

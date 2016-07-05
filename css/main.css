@@ -142,7 +142,7 @@ body {
     font-family: 'Bangers';
     display: block; }
     .sideMenu li :hover {
-      background-color: #E3001B;
+      color: #E3001B;
       text-decoration: none; }
 
 .quote {
@@ -185,6 +185,10 @@ body {
   border-radius: 0px 0px 5px 5px; }
   .lowerContent h2 {
     color: white; }
+
+.charaLink a:hover h2, .comicLink a:hover h2, .contactLink a:hover h2 {
+  color: #E3001B;
+  text-decoration: none; }
 
 .comicIMGone img {
   border-radius: 5px 5px 0px 0px;
