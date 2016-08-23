@@ -6,7 +6,7 @@ $("body").on("click", '.clicker',function(e){
 });
 
 $.ajax({
-    url: "http://gateway.marvel.com:80/v1/public/comics?apikey=a3d450fd87cce2aeff11efbcc111f789", 
+    url: "https://gateway.marvel.com:80/v1/public/comics?apikey=a3d450fd87cce2aeff11efbcc111f789", 
     success: function(result){
 
 
