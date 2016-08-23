@@ -5,7 +5,7 @@ $("body").on("click", '.clicker',function(e){
   var content = $(this).find('.dropdown').toggle();
 });
 
-$.ajax({url: "https://gateway.marvel.com:80/v1/public/characters?apikey=a3d450fd87cce2aeff11efbcc111f789", success: function(result){
+$.ajax({url: "http://gateway.marvel.com:80/v1/public/characters?apikey=a3d450fd87cce2aeff11efbcc111f789", success: function(result){
 
 	function setDataDropdown(character){
 
